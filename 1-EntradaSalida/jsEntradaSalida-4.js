@@ -4,6 +4,10 @@
 */
 function Mostrar()
 {
-	
+	//Declaro variable de nombre y uso prompt para usar su acciòn
+var nombre = prompt("Ingrese su nombre: ")
+
+//Realizo lo mismo que el eje 3 pero al revès
+document.getElementById("elNombre").value = nombre;
 }
 
