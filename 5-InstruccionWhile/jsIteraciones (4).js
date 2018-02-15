@@ -1,13 +1,17 @@
-function Mostrar()
-{
+function Mostrar() {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
+    var numero = parseInt (prompt("ingrese un nùmero entre 0 y 10."));
 
-while (numero >= 0 && numero <= 9) {
+    while (numero <= 0 || numero >= 9 || isNaN(numero)) {
 
-        alert("Tu numero es " + numero);
-        break;
+        numero = parseint(prompt("Error. Reingrese un nùmero entre 0 y 10."));
+
     }
+
+    alert("Su nùmero es " + numero);
 
 
 }//FIN DE LA FUNCIÓN
+
+
+
