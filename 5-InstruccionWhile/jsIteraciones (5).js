@@ -1,16 +1,26 @@
 function Mostrar() {
 
     var sexo = prompt("ingrese f ó m .");
-    
-    
-    while (!(sexo == "m" || sexo == "f")) {
 
-        sexo = prompt("Ese sexo no existe");
+
+    while (sexo != "m" && sexo != "f" && sexo != "F" && sexo != "M") {
+
+        sexo = prompt("Error. Reingrese. Ese sexo no existe");
 
 
     }
+    if (sexo == "f") {
+        sexo = "masculino";
 
-    alert("Su sexo es " + sexo);
+    }
+    else {
+
+        sexo = "femenino";
+
+    }
+
+
+    document.getElementById("Sexo").value = ("Tu sexo es " + sexo);
 
 
 
