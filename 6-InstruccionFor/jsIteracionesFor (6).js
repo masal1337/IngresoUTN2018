@@ -1,21 +1,21 @@
-function Mostrar()
-{
-var pedido = prompt("Ingrese numeros y encuentro los pares");
-var cantpares = contador / 2;
+function Mostrar() {
+  var numero;
+  var cantPares = 0;
+  var i;
 
-var contador;
+  numero = parseInt(prompt("Ingrese numeros y encuentro los pares"));
 
-for (contador = 1 ; contador < pedido ; contador = contador + 1) {
+  for (i = 1; i <= numero; i++) {
 
-console.log (contador);
+    if (i % 2 == 0) {
 
-if ()
- 
+      cantPares++;
+      console.log(i);
 
-  
-
-
-
+    }
 
   }
+
+  console.log("La cantidad de numeros encontrados es de " + cantPares);
+
 }//FIN DE LA FUNCIÓN
